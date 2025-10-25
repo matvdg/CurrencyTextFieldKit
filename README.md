@@ -1,4 +1,4 @@
-# CurrencyTextField
+# CurrencyTextFieldKit
 
 **Tags:** apple-watch • apple-watch-keyboard • apple-watch-keypad • decimal • keyboard • keypad • number-pad • swift • swiftui • watchOS • ios • ipados • macos • visionos • currency • amount • money • finance • numberfield
 
@@ -23,7 +23,7 @@ dependencies: [
 
 Then import it in your SwiftUI file:
 ```swift
-import CurrencyTextField
+import CurrencyTextFieldKit
 ```
 
 ## Usage Example
