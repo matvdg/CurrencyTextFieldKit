@@ -21,6 +21,15 @@ dependencies: [
 ]
 ```
 
+### Localization
+
+To fully support localization of placeholders and toggle labels, add the following keys to your String Catalog (or `Localizable.strings`) in your project:
+
+```text
+"amount" = "Amount";
+"overdrawn" = "Overdrawn";
+```
+
 Then import it in your SwiftUI file:
 ```swift
 import CurrencyTextFieldKit
@@ -35,7 +44,7 @@ import SwiftUI
 import CurrencyTextField
 
 struct ContentView: View {
-    @State private var amount: Double = 0.0
+    @State private var amount: Double?
     @State private var signMode: SignMode = .both
 
     var body: some View {
@@ -43,6 +52,17 @@ struct ContentView: View {
             .padding()
     }
 }
+```
+
+You can also wrap it in a `NavigationStack` and a `Form`, which is **required on watchOS** to enable pushing the `CurrencyKeyboardView`:
+
+```swift
+NavigationStack {
+    Form {
+        CurrencyTextField(amount: $amount)
+    }
+}
+// ⚠️ Necessary for watchOS to push the CurrencyKeyboardView.
 ```
 
 When `signMode` is set to `.both`, a toggle (or a dedicated ± button on Apple Watch) allows switching between positive and negative values.  
@@ -57,7 +77,7 @@ import SwiftUI
 import CurrencyTextField
 
 struct WatchCurrencyView: View {
-    @State private var amount: Double = 0.0
+    @State private var amount: Double?
 
     var body: some View {
         CurrencyKeyboardView(value: $amount)
