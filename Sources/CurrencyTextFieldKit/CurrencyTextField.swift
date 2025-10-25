@@ -11,6 +11,11 @@ public struct CurrencyTextField: View {
     @FocusState private var isEditing: Bool
     
     private let decimalSeparator: String = Locale.current.decimalSeparator ?? "."
+
+    public init(amount: Binding<Double?>, signMode: SignMode = .both) {
+        self._amount = amount
+        self.signMode = signMode
+    }
     
     public var body: some View {
 #if os(watchOS)

@@ -3,6 +3,10 @@ import SwiftUI
 public struct CurrencyText: View {
     
     var amount: Double?
+
+    public init(amount: Double?) {
+        self.amount = amount
+    }
     
     public var body: some View {
         Group {

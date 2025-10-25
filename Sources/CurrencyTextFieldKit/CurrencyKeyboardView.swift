@@ -10,8 +10,14 @@ public struct CurrencyKeyboardView: View {
     @Binding var amount: Double?
     @State private var inputString: String = ""
     @State var isPositive = true
-    var signMode: SignMode = .both
-    var displayCurrency: Bool = true
+    public var signMode: SignMode = .both
+    public var displayCurrency: Bool = true
+
+    public init(amount: Binding<Double?>, signMode: SignMode = .both, displayCurrency: Bool = true) {
+        self._amount = amount
+        self.signMode = signMode
+        self.displayCurrency = displayCurrency
+    }
     
     private let decimalSeparator: String = Locale.current.decimalSeparator ?? "."
     private var keys: [[String]] {
