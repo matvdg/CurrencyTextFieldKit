@@ -1,6 +1,6 @@
 import Foundation
 
-enum SignMode {
+public enum SignMode {
     case positiveOnly
     case negativeOnly
     case both

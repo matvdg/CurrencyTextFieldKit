@@ -3,7 +3,7 @@
 import SwiftUI
 import WatchKit
 
-struct CurrencyKeyboardView: View {
+public struct CurrencyKeyboardView: View {
     
     private let currencySymbol: String = Locale.current.currencySymbol ?? "€"
     @Environment(\.dismiss) private var dismiss
@@ -22,7 +22,7 @@ struct CurrencyKeyboardView: View {
         ]
     }
 
-    var body: some View {
+    public var body: some View {
         VStack(spacing: 5) {
             HStack(spacing: 0) {
                 if !inputString.isEmpty {

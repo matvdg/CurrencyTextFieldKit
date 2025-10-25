@@ -1,10 +1,10 @@
 import SwiftUI
 
-struct CurrencyText: View {
+public struct CurrencyText: View {
     
     var amount: Double?
     
-    var body: some View {
+    public var body: some View {
         Group {
             if let amount {
                 switch amount {

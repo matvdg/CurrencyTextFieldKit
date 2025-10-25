@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CurrencyTextField: View {
+public struct CurrencyTextField: View {
     
     @Binding var amount: Double?
     
@@ -12,7 +12,7 @@ struct CurrencyTextField: View {
     
     private let decimalSeparator: String = Locale.current.decimalSeparator ?? "."
     
-    var body: some View {
+    public var body: some View {
 #if os(watchOS)
         NavigationLink {
             CurrencyKeyboardView(amount: $amount, signMode: signMode)
