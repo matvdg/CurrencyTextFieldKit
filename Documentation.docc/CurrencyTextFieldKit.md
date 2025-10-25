@@ -11,7 +11,7 @@ CurrencyTextFieldKit offers a reusable and locale-aware currency input field tha
 Add CurrencyTextFieldKit to your project using Swift Package Manager by adding the following URL to your dependencies:
 
 ```swift
-https://github.com/yourusername/CurrencyTextFieldKit.git
+https://github.com/matvdg/CurrencyTextFieldKit.git
 ```
 
 Alternatively, clone the repository and include the package manually in your project.
