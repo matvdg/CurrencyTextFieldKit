@@ -9,8 +9,7 @@ On iOS, iPadOS and visionOS, CurrencyTextField uses the native decimalPad keyboa
 On macOS, it validates input characters manually since the decimalPad isn’t available.  
 On watchOS, it introduces a fully custom numeric keyboard — not available natively on watchOS — called `CurrencyKeyboardView`, which can also be used independently of `CurrencyTextField` if desired.
 
-![Screenshot](https://github.com/matvdg/CurrencyTextFieldKit/blob/9d696ceeb9aa73d30b47283cd9755cb531cc8ec0/Screenshots/watchOS%2B.png)
-![Screenshot](https://github.com/matvdg/CurrencyTextFieldKit/blob/9d696ceeb9aa73d30b47283cd9755cb531cc8ec0/Screenshots/watchOS-.png)
+![Screenshot](https://github.com/matvdg/CurrencyTextFieldKit/blob/8835ee3ab5e3c9d667721bbf28a00fee32250300/Screenshots/demo.png)
 
 
 ## Install
@@ -36,10 +35,10 @@ Then import it in your SwiftUI file:
 import CurrencyTextFieldKit
 ```
 
-![Screenshot](https://github.com/matvdg/CurrencyTextFieldKit/blob/9d696ceeb9aa73d30b47283cd9755cb531cc8ec0/Screenshots/watchOS_recording.mov)
-
-
 ## Usage Example
+
+![Screenshot](https://github.com/matvdg/CurrencyTextFieldKit/blob/9d696ceeb9aa73d30b47283cd9755cb531cc8ec0/Screenshots/watchOS_recording.mov)
+![Screenshot](https://github.com/matvdg/CurrencyTextFieldKit/blob/8835ee3ab5e3c9d667721bbf28a00fee32250300/Screenshots/iOS_recording.mov)
 
 You can easily initialize a `CurrencyTextField` in your SwiftUI view:
 
