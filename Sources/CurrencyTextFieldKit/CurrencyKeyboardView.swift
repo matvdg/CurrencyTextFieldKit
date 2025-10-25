@@ -65,7 +65,7 @@ public struct CurrencyKeyboardView: View {
     
     /// The decimal separator string used according to the current locale.
     /// Defaults to "." if the locale does not provide one.
-    @State private let decimalSeparator: String = Locale.current.decimalSeparator ?? "."
+    private let decimalSeparator: String = Locale.current.decimalSeparator ?? "."
     
     /// Defines the layout of keys displayed on the keyboard.
     ///
