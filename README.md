@@ -4,8 +4,6 @@
 
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmatvdg%2FCurrencyTextFieldKit%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/matvdg/CurrencyTextFieldKit)
 
-**Tags:** apple-watch • apple-watch-keyboard • apple-watch-keypad • decimal • keyboard • keypad • number-pad • swift • swiftui • watchOS • ios • ipados • macos • visionos • currency • amount • money • finance • numberfield
-
 ## Description
 A simple and lightweight SwiftUI component for handling currency input seamlessly across all Apple platforms (iOS, iPadOS, macOS, visionOS, and watchOS 26+).
 
