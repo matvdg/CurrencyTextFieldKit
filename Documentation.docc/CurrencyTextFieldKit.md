@@ -24,7 +24,7 @@ CurrencyTextFieldKit automatically detects and applies the user's current locale
 
 ```swift
 import SwiftUI
-import CurrencyTextField
+import CurrencyTextFieldKit
 
 struct ContentView: View {
     @State private var amount: Double?

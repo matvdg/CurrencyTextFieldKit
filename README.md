@@ -45,9 +45,6 @@ import CurrencyTextFieldKit
 You can easily initialize a `CurrencyTextField` in your SwiftUI view:
 
 ```swift
-import SwiftUI
-import CurrencyTextField
-
 struct ContentView: View {
     @State private var amount: Double?
     @State private var signMode: SignMode = .both
@@ -78,9 +75,6 @@ If your project targets **only watchOS**, or you want to build a specific watchO
 
 ```swift
 #if os(watchOS)
-import SwiftUI
-import CurrencyTextField
-
 struct WatchCurrencyView: View {
     @State private var amount: Double?
 
